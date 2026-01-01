@@ -5,6 +5,8 @@ import QtQuick.Controls
 
 Item {
     id: lockScreen
+    // only show ui on primary screen
+    visible: (Config.showOnlyOnMainMonitor === true) ? primaryScreen : true
     signal loginRequested
 
     // TODO: Support for weather info?

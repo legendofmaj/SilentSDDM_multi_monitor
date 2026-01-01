@@ -5,6 +5,8 @@ import SddmComponents
 
 Item {
     id: loginScreen
+    // only show ui on primary screen
+    visible: (Config.showOnlyOnMainMonitor === true) ? primaryScreen : true
     signal close
     signal toggleLayoutPopup
 
