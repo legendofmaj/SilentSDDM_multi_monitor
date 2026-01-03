@@ -1,6 +1,9 @@
 > [!WARNING]
 > This theme requires **SDDM v0.21.0 or newer**. Make sure your distro provides the correct version before installing.
 
+> [!IMPORTANT]
+> Want SilentSDDM to also be available as a lockscreen service? Take a look into [this discussion](https://github.com/uiriansan/SilentSDDM/discussions/78).
+
 https://github.com/user-attachments/assets/dd63c526-34d6-45ec-8a7d-5c29bf08c702
 
 # Presets
@@ -72,7 +75,7 @@ https://github.com/user-attachments/assets/c90799f7-52bb-4c90-90db-4890281991c1
 - qt6-multimedia
 
 # Installation
-[`Install script`](#Install-script) [`AUR packages for Arch`](#AUR-packages-for-arch) [`NixOS flake`](#NixOS-flake) [`Manual installation`](#Manual-installation)
+[`Install script`](#Install-script) [`AUR packages for Arch`](#AUR-packages-for-arch) [`NixOS flake`](#NixOS-flake) [`Manual installation`](#Manual-installation) [`Pling/KDE Store`](#plingkde-store)
 
 ## Install script
 Just clone the repo and run the script:
@@ -86,10 +89,13 @@ git clone -b main --depth=1 https://github.com/uiriansan/SilentSDDM && cd Silent
 
 ## AUR packages for Arch
 If you run Arch Linux, consider installing one of the AUR packages:
+
+##### [`Stable version`](https://aur.archlinux.org/packages/sddm-silent-theme):
 ```bash
-# stable version
 yay -S sddm-silent-theme
-# git version
+```
+##### [`Git version`](https://aur.archlinux.org/packages/sddm-silent-theme-git):
+```bash
 yay -S sddm-silent-theme-git
 ```
 Then, replace the current theme and set the environment variables in `/etc/sddm.conf`:
@@ -231,6 +237,9 @@ sudoedit /etc/sddm.conf
     [Theme]
     Current=silent
 ```
+
+## Pling/KDE Store
+The theme is also available in [Planet Linux'ing Groups](https://www.pling.com/p/2298627/) & [KDE Store](https://store.kde.org/p/2298627).
 
 # Customizing
 
